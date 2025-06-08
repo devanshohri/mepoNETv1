@@ -24,3 +24,43 @@ function mepoNET_features() {
 }
 
 add_action('after_setup_theme', 'mepoNET_features');
+
+
+
+//comment author url
+function your_get_comment_author_link () {
+    global $comment;
+
+    if ($comment->user_id == '0') {
+        if (!empty ($comment->comment_author_url)) {
+            $url = $comment->comment_author_url;
+        } else {
+            $url = '#';
+        }
+    } else {
+        $url = get_author_posts_url($comment->user_id);
+    }
+
+    echo $url;
+}
+
+
+// Upcoming Events Query (Past events filter)       
+function mepoNET_adjust_queries($query) {
+    if (!is_admin() AND is_post_type_archive('event') AND $query->is_main_query()) {
+        $today = date('Ymd');
+        $query->set('meta_key', 'event_date');
+        $query->set('orderby', 'meta_value_num');
+        $query->set('order', 'ASC');
+        $query->set('meta_query', array(
+            array(
+                'key' => 'event_date',
+                'compare' => '>=',
+                'value' => $today,
+                'type' => 'numeric',
+            )
+        ));
+    }
+}
+
+add_action('pre_get_posts', 'mepoNET_adjust_queries');
