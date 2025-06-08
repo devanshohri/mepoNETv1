@@ -17,14 +17,26 @@ get_header();
                 <p>By: <?php the_author_posts_link(); ?></p>
                 <p> <?php the_date(); ?></p>
                 <p><p><span class="dashicons dashicons-calendar-alt"></span> <?php echo ucwords(get_post_type()); ?></p></p>
-                <p><?php 
-                        $relatedStudyPath = get_field('related_study_paths');
-                        if ($relatedStudyPath) {
-                        foreach($relatedStudyPath as $studyPath) { ?>
-                            <li><a href="<?php echo get_the_permalink($studyPath); ?>"><?php echo get_the_title($studyPath) ?></a></li>
-                        <?php }}
+
+
+                <div class="related-study-paths">
+                    <?php 
+                    $relatedStudyPaths = get_field('related_study_paths');
+                    if ($relatedStudyPaths) {
+                        foreach($relatedStudyPaths as $studyPath) {
+                            // Get the slug for CSS class
+                            $study_path_slug = get_post_field('post_name', $studyPath);
+                            ?>
+                            <a href="<?php echo get_the_permalink($studyPath); ?>" 
+                            class=" study-path-tag-<?php echo esc_attr($study_path_slug); ?>">
+                                <?php echo get_the_title($studyPath); ?>
+                            </a>
+                        <?php }
+                    }
                     ?>
-                </p>
+                </div>
+
+                
             </div>
 
             <div class="single-post-details">

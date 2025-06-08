@@ -23,12 +23,14 @@
         </div>
 
         <div class="header-buttons">
-            <div class="header-add">
-                <span class="material-icons">add</span>
-            </div>
             <div class="header-search">
                 <span class="material-icons">search</span>
             </div>
+            
+            <div class="header-add">
+                <span class="material-icons">add</span>
+            </div>
+            
         </div>
         <div class="header-add-overlay">
             <div class="header-add-buttons">

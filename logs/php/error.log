@@ -293,3 +293,52 @@ Stack trace:
 #2 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
 #3 {main}
   thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 258
+[08-Jun-2025 03:44:11 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\single-study-path.php on line 227
+[08-Jun-2025 03:44:11 UTC] PHP Warning:  Attempt to read property "post" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\single-study-path.php on line 227
+[08-Jun-2025 03:44:11 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\single-study-path.php on line 227
+[08-Jun-2025 03:44:11 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\single-study-path.php on line 227
+[08-Jun-2025 03:44:11 UTC] PHP Warning:  Attempt to read property "post" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\single-study-path.php on line 227
+[08-Jun-2025 03:44:11 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\single-study-path.php on line 227
+[08-Jun-2025 15:23:23 UTC] PHP Parse error:  Unmatched '}' in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 633
+[08-Jun-2025 15:23:25 UTC] PHP Parse error:  Unmatched '}' in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 633
+[08-Jun-2025 15:24:29 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 702
+[08-Jun-2025 15:30:59 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 411
+[08-Jun-2025 15:30:59 UTC] PHP Warning:  Attempt to read property "post" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 411
+[08-Jun-2025 15:30:59 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 411
+[08-Jun-2025 15:30:59 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:30:59 UTC] PHP Warning:  Attempt to read property "post" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:30:59 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:30:59 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:30:59 UTC] PHP Warning:  Attempt to read property "post" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:30:59 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:30:59 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:30:59 UTC] PHP Warning:  Attempt to read property "post" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:30:59 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:30:59 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 644
+[08-Jun-2025 15:30:59 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 644
+[08-Jun-2025 15:32:59 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 393
+[08-Jun-2025 15:32:59 UTC] PHP Warning:  Attempt to read property "post" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 393
+[08-Jun-2025 15:32:59 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 393
+[08-Jun-2025 15:32:59 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 626
+[08-Jun-2025 15:32:59 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 626
+[08-Jun-2025 15:34:00 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 411
+[08-Jun-2025 15:34:00 UTC] PHP Warning:  Attempt to read property "post" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 411
+[08-Jun-2025 15:34:00 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 411
+[08-Jun-2025 15:34:00 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:34:00 UTC] PHP Warning:  Attempt to read property "post" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:34:00 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:34:00 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:34:00 UTC] PHP Warning:  Attempt to read property "post" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:34:00 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:34:00 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:34:00 UTC] PHP Warning:  Attempt to read property "post" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:34:00 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 200
+[08-Jun-2025 15:34:00 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 644
+[08-Jun-2025 15:34:00 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 644
+[08-Jun-2025 15:34:52 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 616
+[08-Jun-2025 15:34:52 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 616
+[08-Jun-2025 15:36:29 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 648
+[08-Jun-2025 15:36:29 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 648
+[08-Jun-2025 15:36:31 UTC] PHP Warning:  Undefined variable $mainfeed_query in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 648
+[08-Jun-2025 15:36:31 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\index.php on line 648
+[08-Jun-2025 18:44:41 UTC] PHP Parse error:  Unclosed '{' on line 11 in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\archive-event.php on line 43
