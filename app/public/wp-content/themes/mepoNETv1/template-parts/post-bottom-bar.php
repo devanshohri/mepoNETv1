@@ -52,7 +52,7 @@ if (is_user_logged_in()) {
                 ?>
                 <a href="<?php echo get_the_permalink($studyPath); ?>"
                     class=" study-path-tag-<?php echo esc_attr($study_path_slug); ?>">
-                    <?php echo get_the_title($studyPath); ?>
+                    <?php echo get_the_title($studyPath); get_the_ID('study-path') ?>
                 </a>
             <?php }
         }

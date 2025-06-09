@@ -19,13 +19,13 @@ function rpt_get_relative_post_time($post_id = null) {
         return 'Just now';
     } elseif ($time_diff < HOUR_IN_SECONDS) {
         $mins = floor($time_diff / MINUTE_IN_SECONDS);
-        return $mins . ' minute' . ($mins !== 1 ? 's' : '') . ' ago';
+        return $mins . ' minute' . ($mins != 1 ? 's' : '') . ' ago'; // Fixed: != instead of !==
     } elseif ($time_diff < DAY_IN_SECONDS) {
         $hours = floor($time_diff / HOUR_IN_SECONDS);
-        return $hours . ' hour' . ($hours !== 1 ? 's' : '') . ' ago';
+        return $hours . ' hour' . ($hours != 1 ? 's' : '') . ' ago'; // Fixed: !=
     } elseif ($time_diff < WEEK_IN_SECONDS) {
         $days = floor($time_diff / DAY_IN_SECONDS);
-        return $days . ' day' . ($days !== 1 ? 's' : '') . ' ago';
+        return $days . ' day' . ($days != 1 ? 's' : '') . ' ago'; // Fixed: !=
     } else {
         return get_the_date('', $post_id);
     }

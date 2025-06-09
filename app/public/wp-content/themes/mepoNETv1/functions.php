@@ -1,5 +1,23 @@
 <?php
 
+//Include ACF
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+//Like Route
+require get_theme_file_path('/inc/like-route.php');
+
+//Follow Route
+require get_theme_file_path('/inc/follow-route.php');
+
+//Search Route
+require get_theme_file_path('/inc/search-route.php');
+
+function mepoNET_custom_rest() {
+    register_rest_field('post', 'authorName', array(
+        'get_callback' => function() {return get_the_author();}
+    ));
+}
+
 //Files and Scripts
 function mepoNET_files() {
     wp_enqueue_style('mepoNET_main_styles', get_stylesheet_uri());
