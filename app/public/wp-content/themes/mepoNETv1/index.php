@@ -29,14 +29,9 @@ get_header(); ?>
                                 <div class="post-top-bar">
                                     <div class="post-profile">
                                         <div class="post-profile-img">
-                                            <?php
+                                           <?php
                                             $get_author_id = get_the_author_meta('ID');
-
-                                            // Get the avatar URL for that user, size 450px
-                                            $get_author_gravatar = get_avatar_url($get_author_id, array('size' => 450));
-
-                                            // Output the image tag with safe escaped URL and alt text as the author's display name
-                                            echo '<img src="' . esc_url($get_author_gravatar) . '" alt="' . esc_attr(get_the_author_meta('display_name', $get_author_id)) . '" />';
+                                            echo get_avatar($get_author_id);
                                             ?>
                                         </div>
                                         <div class="post-profile-info">
@@ -104,7 +99,7 @@ get_header(); ?>
                                         <div class="post-profile-img">
                                             <?php
                                             $get_author_id = get_the_author_meta('ID');
-                                            echo  get_avatar($get_author_id);
+                                            echo get_avatar($get_author_id);
                                             ?>
                                         </div>
                                         <div class="post-profile-info">
@@ -218,8 +213,7 @@ get_header(); ?>
                                         <div class="post-profile-img">
                                             <?php
                                             $get_author_id = get_the_author_meta('ID');
-                                            $get_author_gravatar = get_avatar_url($get_author_id, ['size' => 450]);
-                                            echo '<img src="' . esc_url($get_author_gravatar) . '" alt="' . esc_attr(get_the_title()) . '" />';
+                                            echo get_avatar($get_author_id);
                                             ?>
                                         </div>
 

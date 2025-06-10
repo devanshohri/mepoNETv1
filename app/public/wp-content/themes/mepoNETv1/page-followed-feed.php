@@ -32,12 +32,16 @@ function get_followed_user_ids($current_user_id) {
 
 $followed_user_ids = get_followed_user_ids($current_user_id);
 
-// Set up a new query to fetch posts from followed users
+// Set up a new query to fetch posts from followed users (only if we're following someone)
 $args = array(
     'post_type' => array('post', 'event', 'project'),
     'posts_per_page' => 10, // Adjust as needed
-    'author__in' => $followed_user_ids
 );
+
+// Only add author__in if we're actually following someone
+if (!empty($followed_user_ids)) {
+    $args['author__in'] = $followed_user_ids;
+}
 $followed_posts_query = new WP_Query($args);
 ?>
 
@@ -57,7 +61,13 @@ $followed_posts_query = new WP_Query($args);
             </div>
 
             <div class="main-content-feed">
-                <?php if ($followed_posts_query->have_posts()) : ?>
+                <?php if (empty($followed_user_ids)) : ?>
+                    <div class="no-following-message">
+                        <p>You're not following anyone yet.</p>
+                        <p>Follow some users to see their posts here.</p>
+                        <a href="<?php echo site_url('/community/'); ?>" class="button">Browse Community</a>
+                    </div>
+                <?php elseif ($followed_posts_query->have_posts()) : ?>
                     <?php while ($followed_posts_query->have_posts()) : $followed_posts_query->the_post(); ?>
 
                         <!-- POST HTML -->
@@ -69,12 +79,7 @@ $followed_posts_query = new WP_Query($args);
                                         <div class="post-profile-img">
                                             <?php
                                             $get_author_id = get_the_author_meta('ID');
-
-                                            // Get the avatar URL for that user, size 450px
-                                            $get_author_gravatar = get_avatar_url($get_author_id, array('size' => 450));
-
-                                            // Output the image tag with safe escaped URL and alt text as the author's display name
-                                            echo '<img src="' . esc_url($get_author_gravatar) . '" alt="' . esc_attr(get_the_author_meta('display_name', $get_author_id)) . '" />';
+                                            echo get_avatar($get_author_id);
                                             ?>
                                         </div>
                                         <div class="post-profile-info">
@@ -339,23 +344,25 @@ $followed_posts_query = new WP_Query($args);
                         <?php } ?>
                         <!-- PROJECT HTML -->
                     <?php endwhile; ?>
-                <?php else: ?>
+                <?php elseif (!empty($followed_user_ids)): ?>
                     <p>No posts found from users you follow.</p>
                 <?php endif; ?>
 
                 <?php wp_reset_postdata(); ?>
             </div>
 
-            <div class="pagination">
-                <?php
-                // Use paginate_links() for custom query pagination
-                echo paginate_links(array(
-                    'total' => $followed_posts_query->max_num_pages,
-                    'prev_text' => '&laquo; Previous',
-                    'next_text' => 'Next &raquo;'
-                ));
-                ?>
-            </div>
+            <?php if (!empty($followed_user_ids) && $followed_posts_query->max_num_pages > 1) : ?>
+                <div class="pagination">
+                    <?php
+                    // Use paginate_links() for custom query pagination
+                    echo paginate_links(array(
+                        'total' => $followed_posts_query->max_num_pages,
+                        'prev_text' => '&laquo; Previous',
+                        'next_text' => 'Next &raquo;'
+                    ));
+                    ?>
+                </div>
+            <?php endif; ?>
 
         </div>
 
