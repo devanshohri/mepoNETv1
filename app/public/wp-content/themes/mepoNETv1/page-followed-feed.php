@@ -1,6 +1,45 @@
 <?php
+/* Template Name: Followed Users Posts */
 
-get_header(); ?>
+get_header();
+
+// Get the current user ID
+$current_user_id = get_current_user_id();
+
+// Fetch the IDs of users the current user follows
+function get_followed_user_ids($current_user_id) {
+    $follow_query = new WP_Query(array(
+        'author' => $current_user_id,
+        'post_type' => 'follow',
+        'fields' => 'ids',
+        'posts_per_page' => -1
+    ));
+
+    $followed_user_ids = array();
+    if ($follow_query->have_posts()) {
+        while ($follow_query->have_posts()) {
+            $follow_query->the_post();
+            $followed_user_id = get_post_meta(get_the_ID(), 'followed_user_id', true);
+            if ($followed_user_id) {
+                $followed_user_ids[] = $followed_user_id;
+            }
+        }
+    }
+    wp_reset_postdata(); // Reset post data after query
+
+    return $followed_user_ids;
+}
+
+$followed_user_ids = get_followed_user_ids($current_user_id);
+
+// Set up a new query to fetch posts from followed users
+$args = array(
+    'post_type' => array('post', 'event', 'project'),
+    'posts_per_page' => 10, // Adjust as needed
+    'author__in' => $followed_user_ids
+);
+$followed_posts_query = new WP_Query($args);
+?>
 
 <div class="page-container">
     <div class="content-layout-grid">
@@ -18,9 +57,8 @@ get_header(); ?>
             </div>
 
             <div class="main-content-feed">
-                <?php if (have_posts()): ?>
-                    <?php while (have_posts()):
-                        the_post(); ?>
+                <?php if ($followed_posts_query->have_posts()) : ?>
+                    <?php while ($followed_posts_query->have_posts()) : $followed_posts_query->the_post(); ?>
 
                         <!-- POST HTML -->
                         <?php if ('post' == get_post_type()) { ?>
@@ -94,8 +132,6 @@ get_header(); ?>
 
                         <?php } ?>
 
-                        <!-- POST HTML -->
-
                         <!-- EVENT HTML -->
                         <?php if ('event' == get_post_type()) { ?>
                             <div class="feed-post">
@@ -104,7 +140,7 @@ get_header(); ?>
                                         <div class="post-profile-img">
                                             <?php
                                             $get_author_id = get_the_author_meta('ID');
-                                            echo  get_avatar($get_author_id);
+                                            echo get_avatar($get_author_id);
                                             ?>
                                         </div>
                                         <div class="post-profile-info">
@@ -188,7 +224,7 @@ get_header(); ?>
                                                 <?php
                                                 $eventLocation = get_field('event_location');
                                                 if ($eventLocation) {
-                                                    echo esc_html(wp_trim_words( $eventLocation, 6, '...' ));
+                                                    echo esc_html(wp_trim_words($eventLocation, 6, '...'));
                                                 }
                                                 ?>
                                             </p>
@@ -204,8 +240,6 @@ get_header(); ?>
 
                             </div>
                         <?php } ?>
-
-                        <!-- EVENT HTML -->
 
                         <!-- PROJECT HTML -->
                         <?php if ('project' == get_post_type()) { ?>
@@ -306,18 +340,26 @@ get_header(); ?>
                         <!-- PROJECT HTML -->
                     <?php endwhile; ?>
                 <?php else: ?>
-                    <p>No posts found.</p>
+                    <p>No posts found from users you follow.</p>
                 <?php endif; ?>
 
                 <?php wp_reset_postdata(); ?>
             </div>
 
+            <div class="pagination">
+                <?php
+                // Use paginate_links() for custom query pagination
+                echo paginate_links(array(
+                    'total' => $followed_posts_query->max_num_pages,
+                    'prev_text' => '&laquo; Previous',
+                    'next_text' => 'Next &raquo;'
+                ));
+                ?>
+            </div>
 
         </div>
 
-
         <div class="content-aside">
-
             <div class="activity-feed">
                 <h4>New Activity</h4>
                 <ul> <!-- Move the <ul> element outside the loop -->

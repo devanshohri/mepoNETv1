@@ -121,6 +121,10 @@ h4{
   color: #FFFFFF;
   border-radius: 20px;
   text-align: center;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .black-bttn a{
@@ -129,6 +133,27 @@ h4{
 }
 
 .black-bttn a:hover {
+  text-decoration: underline;
+}
+
+.white-bttn {
+  background-color: #FFFFFF;
+  padding: 10px;
+  color: #121212;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.white-bttn a{
+  color: #121212;
+  font-weight: 500;
+}
+
+.white-bttn a:hover {
   text-decoration: underline;
 }
 
@@ -179,6 +204,42 @@ h4{
   border-radius: 50px;
   font-size: 0.8rem;
       margin: 3px;
+}
+
+.interactive-media-color{
+  color: var(--blue-d);
+  background-color: var(--blue-l);
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 15px;
+  border: 2px solid var(--blue-d);
+}
+
+.music-production-color{
+  color: var(--yellow-d);
+  background-color: var(--yellow-l);
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 15px;
+  border: 2px solid var(--yellow-d);
+}
+
+.fine-arts-color{
+  color: var(--green-d);
+  background-color: var(--green-l);
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 15px;
+  border: 2px solid var(--green-d);
+}
+
+.medianomi-color{
+  color: var(--pink-d);
+  background-color: var(--pink-l);
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 15px;
+  border: 2px solid var(--pink-d);
 }
 
 
@@ -520,7 +581,7 @@ header {
 }
 
 .sidebar {
-  text-align: center;
+  text-align: left;
   background-color: #FFFFFF;
   padding: 20px;
   border-radius: 50px;
@@ -632,7 +693,6 @@ opacity: 75%;
 .dropdown-menu a {
   display: block;
   padding: 10px 20px;
-  color: #121212;
   font-family: "Inter";
   font-weight: 500;
   font-size: 1rem;
@@ -642,9 +702,7 @@ opacity: 75%;
 }
 
 
-.dropdown-menu a:first-child {
-  border-top: none;
-}
+
 
 
 .logout-button a{
@@ -665,6 +723,14 @@ opacity: 75%;
 
 .main-content-feed {
   width: 100%;
+}
+
+.feed-toggle-buttons{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
 }
 
 .feed-post {
@@ -784,6 +850,7 @@ opacity: 75%;
   gap: 5px;
   padding: 10px;
   align-items: flex-start;
+  width: 50%;
 }
 
 .post-view-event-bttn {
@@ -881,13 +948,19 @@ opacity: 75%;
   gap: 0.25rem;
 }
 
+.posted-comment {
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+}
+
 
 .post-comments {
   padding: 10px 0px;
   overflow: auto;
   word-wrap: break-word;
 }
-.post-comments strong{
+.posted-comment-content p a{
   display: flex;
   align-items: center;
 }
@@ -943,6 +1016,10 @@ opacity: 75%;
 
 textarea:focus{
   outline: #121212 solid 2px;
+}
+
+.delete-comment-bttn {
+  cursor: pointer;
 }
 
 /*ASIDE ------------------------------------------------------------------ */
@@ -1312,11 +1389,20 @@ padding: 10px;
   color: #121212;
 }
 
-.sidebar-event-container {
+.sidebar-event {
+  text-align: left;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.sidebar-event-container{
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
+  gap: 10px;
   align-items: center;
-  margin-bottom: 15px;
+  margin: 20px 0px;
 }
 
 .sidebar-event-img img {
@@ -1326,38 +1412,38 @@ padding: 10px;
   border-radius: 15px;
 }
 
-.sidebar-event-date p {
-  background: #f3f3f3;
-  border-radius: 15px;
-  padding: 5px 10px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-align: center;
-  display: inline-block;
+.sidebar-event-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.sidebar-event-content h4 a {
-  font-family: 'Inter';
-  font-size: 1rem;
-  color: #121212;
-  text-decoration: none;
-}
 
-.sidebar-event-content h4 a:hover {
-  text-decoration: underline;
-}
 
 /* ---------------- Sidebar People ---------------- */
+
+.sidebar-people {
+  text-align: left;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 50px;
+}
 
 .sidebar-people-cards {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 15px;
+  margin: 10px 0px;
   padding: 15px;
   border-radius: 50px;
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.sidebar-people-cards-info{
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .sidebar-people-cards img {
@@ -1382,3 +1468,478 @@ padding: 10px;
   color: #777;
   font-size: 0.9rem;
 }
+
+/* COMPONENTS   -------------------------------------------------------------------- */
+
+
+/* Entry Page ------------------------------------------------------------------ */
+.hidden-header{
+  display: none;
+  visibility: hidden;
+}
+
+.entry-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.entry-logo {
+  margin: 20px;
+  padding: 10px;
+}
+
+.entry-buttons{
+  display: flex;
+  align-items: center;
+}
+
+.entry-buttons button{
+  margin: 0px 20px;
+}
+/* Entry Page ------------------------------------------------------------------ */
+
+/* 404 Page ------------------------------------------------------------------ */
+.error404text{
+  color: rgb(168, 168, 168);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error404text span{
+  font-size: 100px;
+}
+/* 404 Page ------------------------------------------------------------------ */
+
+/* User Registration------------------------------------------------------------ */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.register-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.mepoNET_reg_header {
+  margin: 10px;
+}
+
+.mepoNET_reg_form {
+  gap: 20px;
+  padding: 20px;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mepoNET_reg_fieldset {
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reg-part-1 {
+  margin: 20px;
+}
+
+.reg-part-2 {
+  margin: 20px;
+}
+
+
+
+.input_container {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.input_container small {
+  font-family: "Inter";
+}
+
+.input_container label{
+  font-size: 0.9rem;
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+.reg_input_field {
+  width: 20em;
+  height: 3em;
+  padding: 0 0 0 16px;
+  border-radius: 20px;
+  outline: none;
+  background-color: #ECECEC;
+  border: 1px solid #12121200;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+.reg_input_field:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #121212;
+  background-color: transparent;
+}
+
+.register-login-button{
+  margin-top: 20px
+}
+/* User Registration------------------------------------------------------------ */
+
+/* User Login ------------------------------------------------------------ */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.mepoNET_login_header {
+  margin: 10px;
+}
+
+.login-fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  border: 0;
+}
+
+.mepoNET_user_login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.input_container {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.login_input_field {
+  width: 20em;
+  height: 3em;
+  padding: 0 0 0 16px;
+  border-radius: 20px;
+  outline: none;
+  background-color: #ECECEC;
+  border: 1px solid #12121200;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+.login_input_field:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #121212;
+  background-color: transparent;
+}
+
+.login-register-button{
+  margin-top: 20px
+}
+
+.mepoNET-errors{
+  color: #f52929;
+  font-family: 'Inter';
+}
+
+/* User Login ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Main Form Container */
+
+/* Common Form Styles */
+.mepoNET_post_form,
+.mepoNET_event_form,
+.mepoNET_project_form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    font-family: "Inter", sans-serif;
+}
+
+.mepoNET_post_form h1,
+.mepoNET_event_form h1,
+.mepoNET_project_form h1 {
+    text-align: center;
+    color: #121212;
+    margin-bottom: 30px;
+}
+
+/* Fieldset Styling */
+.mepoNET_post_form fieldset,
+.mepoNET_event_form fieldset,
+.mepoNET_project_form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Input Container Styling */
+.input_container {
+    margin-bottom: 20px;
+}
+
+.input_container label,
+.input_container label h3 {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Input Field Styling */
+.add_post_field,
+.project_post_field,
+.mepoNET_event_form input[type="text"],
+.mepoNET_event_form input[type="date"],
+.mepoNET_event_form input[type="time"],
+.mepoNET_event_form input[type="url"],
+.mepoNET_project_form input[type="text"],
+.mepoNET_project_form input[type="date"],
+.mepoNET_project_form input[type="email"],
+.mepoNET_project_form input[type="number"],
+.mepoNET_project_form textarea,
+.post_featured_image,
+.project_featured_image,
+.mepoNET_event_form #event_featured_image {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 20px;
+    border: 1px solid #ECECEC;
+    background-color: #ECECEC;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.mepoNET_project_form textarea {
+    min-height: 120px;
+}
+
+/* Focus States */
+.add_post_field:focus,
+.project_post_field:focus,
+.mepoNET_event_form input:focus,
+.mepoNET_project_form input:focus,
+.mepoNET_project_form textarea:focus {
+    border: 1px solid transparent;
+    box-shadow: 0 0 0 2px #121212;
+    background-color: transparent;
+    outline: none;
+}
+
+/* TinyMCE Editor Styling */
+.wp-editor-container {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #ECECEC;
+}
+
+.mce-tinymce {
+    border-radius: 20px !important;
+    border: none !important;
+}
+
+/* File Upload Hover States */
+.post_featured_image:hover,
+.project_featured_image:hover,
+.mepoNET_event_form #event_featured_image:hover {
+    background-color: #e0e0e0;
+}
+
+/* Thumbnail Preview Styling */
+.thumbnail-container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.thumbnail-preview,
+#thumbnail-preview,
+#project-thumbnail-preview {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.delete-thumbnail,
+.mepoNET_event_form .thumbnail-container button {
+    background: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.delete-thumbnail:hover,
+.mepoNET_event_form .thumbnail-container button:hover {
+    background: #cc0000;
+}
+
+/* Study Paths Checkbox Styling */
+.study-paths-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.study-path-option,
+.study-paths-container label {
+    background: #ECECEC;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin: 0;
+}
+
+.study-path-option:hover,
+.study-paths-container label:hover {
+    background: #e0e0e0;
+}
+
+.study-path-option input[type="checkbox"],
+.study-paths-container input[type="checkbox"],
+.input_container input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Submit Button Styling */
+.post_submit_button,
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #121212;
+    color: white;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.post_submit_button:hover,
+.submit-button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+/* Error Message Styling */
+.mepoNET-error-messages,
+.mepoNET-errors,
+.mepoNET_errors {
+    background: #ffeeee;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    border-left: 4px solid #ff4444;
+}
+
+.mepoNET-error-messages p,
+.mepoNET-errors .error-message,
+.mepoNET_errors .reg_error_head {
+    margin: 5px 0;
+    color: #ff4444;
+}
+
+/* Success Message Styling */
+.mepoNET-success {
+    background: #eeffee;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    border-left: 4px solid #44ff44;
+    color: #006600;
+}
+
+/* Project-specific Layout */
+.add-project-field-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.project-field-container-1 {
+    flex: 1;
+}
+
+/* Event-specific Styles */
+.mepoNET_event_form .input_container label h3:after {
+    content: " *";
+    color: #ff4444;
+    display: none;
+}
+
+.mepoNET_event_form .input_container label[for="event_date"] h3:after,
+.mepoNET_event_form .input_container label[for="event_time_start"] h3:after,
+.mepoNET_event_form .input_container label[for="event_location"] h3:after,
+.mepoNET_event_form .input_container label[for="event_entrance"] h3:after {
+    display: inline;
+}
+
+.mepoNET_event_form .event-datetime {
+    display: inline-block;
+    width: calc(33.33% - 10px);
+    margin-right: 15px;
+}
+
+.mepoNET_event_form .event-datetime:last-child {
+    margin-right: 0;
+}
+
+/* Project-specific Required Field Indicator */
+.mepoNET_project_form .input_container label h3 span[style="color:red"] {
+    color: #ff4444 !important;
+    margin-left: 4px;
+}
+
+/*MOBILE*/
+

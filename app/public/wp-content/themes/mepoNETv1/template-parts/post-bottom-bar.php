@@ -52,7 +52,8 @@ if (is_user_logged_in()) {
                 ?>
                 <a href="<?php echo get_the_permalink($studyPath); ?>"
                     class=" study-path-tag-<?php echo esc_attr($study_path_slug); ?>">
-                    <?php echo get_the_title($studyPath); get_the_ID('study-path') ?>
+                    <?php echo get_the_title($studyPath);
+                    get_the_ID('study-path') ?>
                 </a>
             <?php }
         }
@@ -82,35 +83,50 @@ if (is_user_logged_in()) {
 
     <div class="post-comments">
         <?php
-        $args = [
-            'number' => 3,
-            'post_id' => $post->ID,
-        ];
+        $args = array(
+            'number' => '3',
+            'post_id' => get_the_ID()
+        );
 
-        $comments_args = [
+        $comments_args = array(
+            // change the title of send button 
             'label_submit' => 'Post',
+            // change the title of the reply section
             'title_reply' => '',
+            // remove "Text or HTML to be displayed after the set of comment fields"
             'comment_notes_after' => '',
-            'comment_field' => '<div class="textarea-container"><textarea class="comment-textarea" oninput="commentResize(this)" placeholder="Add a Comment for ' . esc_attr(get_the_author_meta('display_name', $post->post_author)) . '" name="comment" aria-required="true"></textarea></div>',
+            // redefine your own textarea (the comment body)
+            'comment_field' => '<div class="textarea-container"><textarea maxlength="450" class="comment-textarea" oninput="commentResize(this)" placeholder="Add a Comment" name="comment" aria-required="true" ></textarea></div>',
+            //Logged In As
             'logged_in_as' => '',
-        ];
 
-        comment_form($comments_args, $post->ID);
+        );
+
+        comment_form($comments_args);
 
         $comments = get_comments($args);
-        if ($comments):
-            foreach ($comments as $comment): ?>
-                <p>
-                    <a href="<?php echo esc_url(get_comment_link($comment)); ?>">
-                        <strong>
-                            <?php echo get_avatar($comment, 42); ?>
-                            <?php echo esc_html($comment->comment_author) . ':'; ?>
-                        </strong>
-                    </a>
-                </p>
-                <p class="comment-itself"><?php echo esc_html($comment->comment_content); ?></p>
-            <?php endforeach;
-        endif;
-        ?>
+        $current_user_id = get_current_user_id();
+        foreach ($comments as $comment):
+            // Check if current user ID matches comment's user ID
+            $is_user_comment = ($current_user_id > 0 && $current_user_id == $comment->user_id);
+            ?>
+            <div class="posted-comment" data-comment-id="<?php echo $comment->comment_ID; ?>">
+                <div class="posted-comment-content">
+                    <p><a href="<?php echo esc_url(get_comment_link($comment)); ?>">
+                                <?php
+                                echo get_avatar($comment, 42);
+                                echo esc_html($comment->comment_author) . ": ";
+                                ?>
+                            </a></p>
+
+                    <p class="comment-itself">
+                        <?php echo esc_html($comment->comment_content); ?>
+                    </p>
+                </div>
+                <?php if ($is_user_comment) { ?>
+                    <div class="delete-comment-bttn"><span class="material-symbols-outlined">delete</span></div>
+                <?php } ?>
+            </div>
+        <?php endforeach; ?>
     </div>
 </div>

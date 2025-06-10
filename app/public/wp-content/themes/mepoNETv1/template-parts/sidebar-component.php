@@ -31,7 +31,7 @@ if (!is_user_logged_in())
             'url' => site_url(),
             'icon' => 'explore',
             'text' => 'Feed',
-            'is_current' => is_front_page() || is_home()
+            'is_current' => is_front_page() || is_home() || is_page('followed-feed')
         ),
         array(
             'url' => site_url('/my-network'),
@@ -50,7 +50,7 @@ if (!is_user_logged_in())
             'icon' => 'extension',
             'text' => 'Projects',
             'is_current' => is_post_type_archive('project')
-        )
+        ),
     );
 
     // Output menu items
@@ -73,10 +73,10 @@ if (!is_user_logged_in())
         <span class="material-icons dropdown-arrow">expand_more</span>
     </div>
     <div class="dropdown-menu" id="study-paths-menu" hidden>
-        <a href="<?php echo site_url('/studypaths/interactive-media/'); ?>">Interactive Media</a>
-        <a href="<?php echo site_url('/studypaths/music-production/'); ?>">Music Production</a>
-        <a href="<?php echo site_url('/studypaths/fine-arts/'); ?>">Fine Arts</a>
-        <a href="<?php echo site_url('/studypaths/medianomi/'); ?>">Medianomi</a>
+        <a class="interactive-media-color" href="<?php echo site_url('/studypaths/interactive-media/'); ?>">Interactive Media</a>
+        <a class="music-production-color" href="<?php echo site_url('/studypaths/music-production/'); ?>">Music Production</a>
+        <a class="fine-arts-color" href="<?php echo site_url('/studypaths/fine-arts/'); ?>">Fine Arts</a>
+        <a class="medianomi-color" href="<?php echo site_url('/studypaths/medianomi/'); ?>">Medianomi</a>
     </div>
 
 

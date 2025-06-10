@@ -2,6 +2,57 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/modules/CommentManager.js":
+/*!***************************************!*\
+  !*** ./src/modules/CommentManager.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "jquery");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+class CommentManager {
+  constructor() {
+    this.events();
+  }
+  events() {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on("click", ".delete-comment-bttn", this.deleteComment.bind(this));
+  }
+  deleteComment(e) {
+    var thisComment = jquery__WEBPACK_IMPORTED_MODULE_0___default()(e.target).closest(".posted-comment");
+    var commentID = thisComment.data('comment-id');
+    var commentCountElement = jquery__WEBPACK_IMPORTED_MODULE_0___default()(e.target).closest('.feed-post').find('.comment-count h3');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default().ajax({
+      beforeSend: xhr => {
+        xhr.setRequestHeader('X-WP-Nonce', mepoNETdata.nonce);
+      },
+      url: mepoNETdata.root_url + '/wp-json/wp/v2/comments/' + commentID,
+      type: 'DELETE',
+      success: response => {
+        thisComment.fadeOut();
+        console.log('deleteCommentSuccess');
+        console.log(response);
+
+        // Update the comment count
+        var commentCount = parseInt(commentCountElement.html(), 10);
+        commentCount--;
+        commentCountElement.html(commentCount);
+      },
+      error: response => {
+        console.log('deleteCommentError');
+        console.log(response);
+      }
+    });
+  }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CommentManager);
+
+/***/ }),
+
 /***/ "./src/modules/Follow.js":
 /*!*******************************!*\
   !*** ./src/modules/Follow.js ***!
@@ -542,6 +593,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_Like__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/Like */ "./src/modules/Like.js");
 /* harmony import */ var _modules_NavbarAddPost__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/NavbarAddPost */ "./src/modules/NavbarAddPost.js");
 /* harmony import */ var _modules_NewActivity__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/NewActivity */ "./src/modules/NewActivity.js");
+/* harmony import */ var _modules_CommentManager__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/CommentManager */ "./src/modules/CommentManager.js");
+
 
 
 
@@ -556,6 +609,9 @@ const window = new _modules_Window__WEBPACK_IMPORTED_MODULE_3__["default"]();
 const like = new _modules_Like__WEBPACK_IMPORTED_MODULE_4__["default"]();
 const navbarAddPost = new _modules_NavbarAddPost__WEBPACK_IMPORTED_MODULE_5__["default"]();
 const newActivity = new _modules_NewActivity__WEBPACK_IMPORTED_MODULE_6__["default"]();
+const commentManager = new _modules_CommentManager__WEBPACK_IMPORTED_MODULE_7__["default"]();
+
+//Feed
 })();
 
 /******/ })()

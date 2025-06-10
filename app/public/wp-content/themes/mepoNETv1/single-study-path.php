@@ -10,11 +10,15 @@ $today = date('Ymd');
 <div class="studypath-title">
     <h1><?php echo esc_html($study_path_title); ?></h1>
 </div>
+
 <div class="page-container">
     <div class="content-layout-grid">
 
         <!-- Sidebar Events -->
         <div class="content-sidebar">
+
+            <?php get_template_part('template-parts/sidebar-component'); ?>
+
             <div class="sidebar-event">
                 <?php
                 $studyPathEvents = new WP_Query([
@@ -58,7 +62,7 @@ $today = date('Ymd');
                                 <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                             </div>
                         </div>
-                    <?php
+                        <?php
                     }
                     wp_reset_postdata();
                 } else {
@@ -100,7 +104,8 @@ $today = date('Ymd');
                             <div class="post-top-bar">
                                 <div class="post-profile">
                                     <div class="post-profile-img">
-                                        <img src="<?php echo esc_url($author_avatar); ?>" alt="<?php echo esc_attr(get_the_title()); ?>" />
+                                        <img src="<?php echo esc_url($author_avatar); ?>"
+                                            alt="<?php echo esc_attr(get_the_title()); ?>" />
                                     </div>
                                     <div class="post-profile-info">
                                         <h4><?php the_author_posts_link(); ?></h4>
@@ -123,7 +128,9 @@ $today = date('Ymd');
                                     </div>
                                 </div>
                                 <div class="post-meta">
-                                    <p><?php if (function_exists('rpt_get_relative_post_time')) echo esc_html(rpt_get_relative_post_time()); ?></p>
+                                    <p><?php if (function_exists('rpt_get_relative_post_time'))
+                                        echo esc_html(rpt_get_relative_post_time()); ?>
+                                    </p>
                                 </div>
                             </div>
                             <div class="post-main-text">
@@ -137,7 +144,7 @@ $today = date('Ymd');
 
                             <?php get_template_part('template-parts/post', 'bottom-bar'); ?>
                         </div>
-                    <?php
+                        <?php
                     }
                     wp_reset_postdata();
                 } else {
@@ -150,51 +157,61 @@ $today = date('Ymd');
         <!-- Sidebar Users -->
         <div class="content-aside">
             <div class="sidebar-people">
-                <div class="people-follow">
-                    <div class="sidebar-users">
-                        <?php
-                        $userQuery = new WP_User_Query([
-                            'meta_query' => [
-                                [
-                                    'key' => 'related_study_paths',
-                                    'compare' => 'LIKE',
-                                    'value' => '"' . $study_path_id . '"',
-                                ],
+                <div class="sidebar-users">
+                    <?php
+                    $userQuery = new WP_User_Query([
+                        'meta_query' => [
+                            [
+                                'key' => 'related_study_paths',
+                                'compare' => 'LIKE',
+                                'value' => '"' . $study_path_id . '"',
                             ],
-                            'number' => 10,
-                            'orderby' => 'display_name',
-                            'order' => 'ASC',
-                        ]);
+                        ],
+                        'number' => 10,
+                        'orderby' => 'display_name',
+                        'order' => 'ASC',
+                    ]);
 
-                        if (!empty($userQuery->results)) {
-                            echo '<h3>' . esc_html($study_path_title) . ' People</h3>';
-                            foreach ($userQuery->results as $user) {
-                                $profile_picture_id = get_user_meta($user->ID, 'profile_picture', true);
-                                $user_description = get_user_meta($user->ID, 'description', true);
-                                ?>
-                                <div class="sidebar-people-cards">
-                                    <a href="<?php echo esc_url(get_author_posts_url($user->ID)); ?>">
-                                        <?php
-                                        if (!empty($profile_picture_id)) {
-                                            $profile_picture_url = wp_get_attachment_image_url($profile_picture_id, [450, 450]);
-                                            echo '<img src="' . esc_url($profile_picture_url) . '" alt="' . esc_attr($user->display_name) . '">';
-                                        } else {
-                                            echo get_avatar($user->ID, 450);
-                                        }
-                                        ?>
-                                        <div class="main-people-text">
-                                            <h4><?php echo esc_html($user->display_name); ?></h4>
-                                            <p><?php echo esc_html($user_description); ?></p>
-                                        </div>
-                                    </a>
-                                </div>
+                    if (!empty($userQuery->results)) {
+                        echo '<h3>' . esc_html($study_path_title) . ' People</h3>';
+                        foreach ($userQuery->results as $user) {
+                            $profile_picture_id = get_user_meta($user->ID, 'profile_picture', true);
+                            $wp_user = new WP_User($user->ID);
+                            $user_roles = $wp_user->roles;
+                            ?>
+                            <div class="sidebar-people-cards">
+                                <a class="sidebar-people-cards-info"
+                                    href="<?php echo esc_url(get_author_posts_url($user->ID)); ?>">
+                                    <?php
+                                    if (!empty($profile_picture_id)) {
+                                        $profile_picture_url = wp_get_attachment_image_url($profile_picture_id, [450, 450]);
+                                        echo '<img src="' . esc_url($profile_picture_url) . '" alt="' . esc_attr($user->display_name) . '">';
+                                    } else {
+                                        echo get_avatar($user->ID, 450);
+                                    }
+                                    ?>
+                                    <div class="main-people-text">
+                                        <h4><?php echo esc_html($user->display_name); ?></h4>
+                                        <p>
+                                            <?php
+                                            global $wp_roles;
+                                            $readable_roles = array_map(function ($role_slug) use ($wp_roles) {
+                                                return isset($wp_roles->roles[$role_slug]['name']) ? $wp_roles->roles[$role_slug]['name'] : ucfirst($role_slug);
+                                            }, $user_roles);
+                                            ?>
+                                        <p><?php echo esc_html(implode(', ', $readable_roles)); ?></p>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
                             <?php
-                            }
-                        } else {
-                            echo '<p class="greyed-text">No Users with Related Study Path</p>';
                         }
-                        ?>
-                    </div>
+                    } else {
+                        echo '<p class="greyed-text">No Users with Related Study Path</p>';
+                    }
+                    ?>
+
+                    <a href="site_url('/interactive-media-people')"></a>
                 </div>
             </div>
         </div>
