@@ -8,6 +8,7 @@ class Follow {
     }
 
     events() {
+        console.log("Binding follow button events");
         $(".author-follow-button").on("click", this.ourClickDispatcher.bind(this));
     }
 
@@ -34,6 +35,7 @@ class Follow {
             success: (response) => {
                 currentFollowButton.attr('data-exists', 'yes');
                 currentFollowButton.text('Unfollow');
+                currentFollowButton.removeClass('black-bttn').addClass('white-bttn');
                 var followCount = parseInt(currentFollowCount.text().trim(), 10);
                 followCount++;
                 currentFollowCount.text(followCount);
@@ -57,6 +59,7 @@ class Follow {
             success: (response) => {
                 currentFollowButton.attr('data-exists', 'no');
                 currentFollowButton.text('Follow');
+                currentFollowButton.removeClass('white-bttn').addClass('black-bttn');
                 var followCount = parseInt(currentFollowCount.text().trim(), 10);
                 followCount--;
                 currentFollowCount.text(followCount);

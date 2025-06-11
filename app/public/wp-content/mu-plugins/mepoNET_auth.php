@@ -16,6 +16,8 @@ class MepoNET_Auth_System {
         
         // Login shortcodes
         add_shortcode('login_form', array($this, 'login_form'));
+
+        add_shortcode('edit_profile_form', array($this, 'edit_profile_form'));
         
         // Actions
         add_action('init', array($this, 'process_registration'));

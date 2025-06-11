@@ -71,6 +71,7 @@ class Follow {
     this.events();
   }
   events() {
+    console.log("Binding follow button events");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".author-follow-button").on("click", this.ourClickDispatcher.bind(this));
   }
 
@@ -97,6 +98,7 @@ class Follow {
       success: response => {
         currentFollowButton.attr('data-exists', 'yes');
         currentFollowButton.text('Unfollow');
+        currentFollowButton.removeClass('black-bttn').addClass('white-bttn');
         var followCount = parseInt(currentFollowCount.text().trim(), 10);
         followCount++;
         currentFollowCount.text(followCount);
@@ -121,6 +123,7 @@ class Follow {
       success: response => {
         currentFollowButton.attr('data-exists', 'no');
         currentFollowButton.text('Follow');
+        currentFollowButton.removeClass('white-bttn').addClass('black-bttn');
         var followCount = parseInt(currentFollowCount.text().trim(), 10);
         followCount--;
         currentFollowCount.text(followCount);
@@ -489,7 +492,7 @@ class Window {
   }
   openOverlay() {
     console.log("lknlkelfkm");
-    this.WindowOverlay.addClass("window-overlay--active");
+    this.WindowOverlay.addClass("window-overlay--active").removeClass("window-overlay");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("body").addClass("body-no-scroll");
   }
   closeOverlay() {

@@ -13,7 +13,10 @@ Version: 1.0
 html {
   box-sizing: border-box;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -22,7 +25,8 @@ html {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 1.65rem;  /* Preferred icon size */
+  font-size: 1.65rem;
+  /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -45,19 +49,19 @@ html {
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 700,
-  'GRAD' 0,
-  'opsz' 48
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
 }
 
 
 .material-symbols-rounded {
   font-variation-settings:
-  'FILL' 1,
-  'wght' 700,
-  'GRAD' 0,
-  'opsz' 48
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
 }
 
 a {
@@ -75,24 +79,24 @@ p {
   word-wrap: break-word;
 }
 
-h1{
+h1 {
   font-family: 'Inter';
   font-weight: 900;
   font-size: 2rem;
 }
 
-h2{
+h2 {
   font-family: 'Inter';
   font-size: 1.65rem;
 }
 
-h3{
+h3 {
   font-family: 'Inter';
   font-weight: 700;
   font-size: 1rem;
 }
 
-h4{
+h4 {
   font-family: 'Inter';
   font-weight: 700;
   font-size: 1.125rem;
@@ -108,7 +112,7 @@ h4{
   --green-d: #064b2f;
   --pink-l: #f9b4cf;
   --pink-d: #e21266;
-  
+
   /* Base tag styles */
   --study-path-tag-padding: 4px 12px;
   --study-path-tag-radius: 20px;
@@ -117,7 +121,7 @@ h4{
 
 .black-bttn {
   background-color: #121212;
-  padding: 10px;
+  padding: 12px;
   color: #FFFFFF;
   border-radius: 20px;
   text-align: center;
@@ -125,9 +129,10 @@ h4{
   font-weight: 500;
   font-size: 0.9rem;
   cursor: pointer;
+  width: fit-content;
 }
 
-.black-bttn a{
+.black-bttn a {
   color: #FFFFFF;
   font-weight: 500;
 }
@@ -146,9 +151,11 @@ h4{
   font-weight: 500;
   font-size: 0.9rem;
   cursor: pointer;
+  width: fit-content;
+  border: 2px solid #121212;
 }
 
-.white-bttn a{
+.white-bttn a {
   color: #121212;
   font-weight: 500;
 }
@@ -167,23 +174,23 @@ h4{
 
 /* Individual study path colors */
 .study-path-tag-interactive-media {
-    color: var(--blue-d);
+  color: var(--blue-d);
   background-color: var(--blue-l);
   padding: 2px 4px;
   border: 2px solid var(--blue-d);
   border-radius: 50px;
   font-size: 0.8rem;
-      margin: 3px;
+  margin: 3px;
 }
 
 .study-path-tag-music-production {
-    color: var(--yellow-d);
+  color: var(--yellow-d);
   background-color: var(--yellow-l);
   padding: 2px 4px;
   border: 2px solid var(--yellow-d);
   border-radius: 50px;
   font-size: 0.8rem;
-      margin: 3px;
+  margin: 3px;
 }
 
 .study-path-tag-fine-arts {
@@ -193,20 +200,20 @@ h4{
   border: 2px solid var(--green-d);
   border-radius: 50px;
   font-size: 0.8rem;
-      margin: 3px;
+  margin: 3px;
 }
 
 .study-path-tag-medianomi {
-    color: var(--pink-d);
+  color: var(--pink-d);
   background-color: var(--pink-l);
   padding: 2px 4px;
   border: 2px solid var(--pink-d);
   border-radius: 50px;
   font-size: 0.8rem;
-      margin: 3px;
+  margin: 3px;
 }
 
-.interactive-media-color{
+.interactive-media-color {
   color: var(--blue-d);
   background-color: var(--blue-l);
   padding: 10px 20px;
@@ -215,7 +222,7 @@ h4{
   border: 2px solid var(--blue-d);
 }
 
-.music-production-color{
+.music-production-color {
   color: var(--yellow-d);
   background-color: var(--yellow-l);
   padding: 10px 20px;
@@ -224,7 +231,7 @@ h4{
   border: 2px solid var(--yellow-d);
 }
 
-.fine-arts-color{
+.fine-arts-color {
   color: var(--green-d);
   background-color: var(--green-l);
   padding: 10px 20px;
@@ -233,7 +240,7 @@ h4{
   border: 2px solid var(--green-d);
 }
 
-.medianomi-color{
+.medianomi-color {
   color: var(--pink-d);
   background-color: var(--pink-l);
   padding: 10px 20px;
@@ -245,7 +252,8 @@ h4{
 
 
 /*Maincontentwrapper------------------------------------------------------------------------------------------------------------ kinda*/
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -267,7 +275,7 @@ body {
 }
 
 /* To centre entry pages */
-.page-centre{
+.page-centre {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -298,7 +306,7 @@ header {
   margin: 0px 10px;
 }
 
-.header-logo a{
+.header-logo a {
   text-decoration: none;
   color: black;
 }
@@ -320,7 +328,7 @@ header {
   cursor: pointer;
 }
 
-.header-search p{
+.header-search p {
   font-size: 14px;
 }
 
@@ -337,7 +345,7 @@ header {
   cursor: pointer;
 }
 
-.header-add p{
+.header-add p {
   font-size: 14px;
 }
 
@@ -349,7 +357,8 @@ header {
   visibility: visible;
   opacity: 1;
   transform: scale(1);
-  transition: opacity 0.5s, transform 0.5s; /* Add transition properties for opacity and transform */
+  transition: opacity 0.5s, transform 0.5s;
+  /* Add transition properties for opacity and transform */
   position: static;
   cursor: pointer;
 }
@@ -448,6 +457,7 @@ header {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -457,15 +467,17 @@ header {
   overflow: hidden;
 }
 
-.search-list ul{
+.search-list ul {
   text-align: left;
   margin: 10px;
   padding-top: 5px;
 }
-.search-list li{
+
+.search-list li {
   margin: 10px;
   list-style: none;
 }
+
 /* Search ---------------------------------------------------------------------------*/
 
 /* Add Post ---------------------------------------------------------------------------*/
@@ -521,30 +533,30 @@ header {
 /* Add Post ---------------------------------------------------------------------------*/
 
 /* Footer.php ---------------------------------------------------------------------------------------------------------------------- */
-.footer-container{
+.footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 15px;
 }
 
-.footer-logo{
+.footer-logo {
   display: flex;
   align-items: center;
   margin: 10px 0px;
   opacity: 50%;
 }
 
-.footer-logo h1{
+.footer-logo h1 {
   font-size: 1.375rem;
 }
 
 .footer-logo span {
-    color: #121212;
-    font-style: italic;
+  color: #121212;
+  font-style: italic;
 }
 
-.footer-links{
+.footer-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -587,13 +599,13 @@ header {
   border-radius: 50px;
 }
 
-.sidebar-profile{
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 10px;
-    border-radius: 35px;
-    flex-direction: column;
+.sidebar-profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 10px;
+  border-radius: 35px;
+  flex-direction: column;
 }
 
 .profile-picture img {
@@ -605,17 +617,17 @@ header {
   border-radius: 100%;
 }
 
-.profile-info{
+.profile-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .profile-username {
-opacity: 75%;
+  opacity: 75%;
 }
 
-.sidebar-button a{
+.sidebar-button a {
   margin-top: 15px;
   padding: 10px 20px;
   background-color: #ffffff;
@@ -631,7 +643,7 @@ opacity: 75%;
   gap: 0.5rem;
 }
 
-.current-sidebar-button a{
+.current-sidebar-button a {
   margin-top: 15px;
   padding: 10px 20px;
   background-color: #121212;
@@ -686,7 +698,7 @@ opacity: 75%;
   display: none;
 }
 
-.dropdown-sidebar-button.open + .dropdown-menu {
+.dropdown-sidebar-button.open+.dropdown-menu {
   display: block;
 }
 
@@ -697,7 +709,8 @@ opacity: 75%;
   font-weight: 500;
   font-size: 1rem;
   text-decoration: none;
-  text-align: left; /* 👈 This aligns the text left */
+  text-align: left;
+  /* 👈 This aligns the text left */
   transition: background-color 0.2s ease;
 }
 
@@ -705,7 +718,7 @@ opacity: 75%;
 
 
 
-.logout-button a{
+.logout-button a {
   color: #f52929;
 }
 
@@ -725,7 +738,7 @@ opacity: 75%;
   width: 100%;
 }
 
-.feed-toggle-buttons{
+.feed-toggle-buttons {
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -749,12 +762,12 @@ opacity: 75%;
   margin-bottom: 20px;
 }
 
-.post-profile{
+.post-profile {
   display: flex;
   align-items: center;
 }
 
-.post-profile-img img{
+.post-profile-img img {
   margin-right: 10px;
   width: 50px;
   height: 50px;
@@ -774,7 +787,7 @@ opacity: 75%;
   padding: 10px 0px;
 }
 
-.post-main-text a{
+.post-main-text a {
   text-decoration: none;
   color: black;
 }
@@ -784,7 +797,7 @@ opacity: 75%;
   margin: 5px 0px;
 }
 
-.readmore a{
+.readmore a {
   color: #121212;
   text-decoration: underline;
   font-family: 'Inter';
@@ -793,7 +806,7 @@ opacity: 75%;
 
 .post-main-media img {
   width: 100%;
-  height: 100%; 
+  height: 100%;
   object-fit: contain;
   box-sizing: border-box;
   border-radius: 25px;
@@ -810,14 +823,14 @@ opacity: 75%;
 
 .post-event-media img {
   width: 100%;
-  height: 100%; 
+  height: 100%;
   object-fit: contain;
   box-sizing: border-box;
   border-radius: 25px;
   display: block;
 }
 
-.post-event-info{
+.post-event-info {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -858,7 +871,7 @@ opacity: 75%;
   margin-left: auto;
 }
 
-.post-event-date p{
+.post-event-date p {
   font-size: 1.5rem;
 }
 
@@ -873,14 +886,14 @@ opacity: 75%;
 
 .post-project-media img {
   width: 100%;
-  height: 100%; 
+  height: 100%;
   object-fit: contain;
   box-sizing: border-box;
   border-radius: 25px;
   display: block;
 }
 
-.post-project-info{
+.post-project-info {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -920,11 +933,11 @@ opacity: 75%;
   margin-left: auto;
 }
 
-.post-project-date p{
+.post-project-date p {
   font-size: 1.5rem;
 }
 
-.post-bottom-bar{
+.post-bottom-bar {
   margin-top: 10px;
 }
 
@@ -951,7 +964,7 @@ opacity: 75%;
 .posted-comment {
   display: flex;
   justify-content: space-between;
-    align-items: center;
+  align-items: center;
 }
 
 
@@ -960,11 +973,13 @@ opacity: 75%;
   overflow: auto;
   word-wrap: break-word;
 }
-.posted-comment-content p a{
+
+.posted-comment-content p a {
   display: flex;
   align-items: center;
 }
-.post-comments img{
+
+.post-comments img {
   margin-right: 10px;
   width: 30px;
   height: 30px;
@@ -991,30 +1006,33 @@ opacity: 75%;
   color: #121212;
   padding: 10px;
   border: none;
-  
-  background:none;
+
+  background: none;
 }
 
 .textarea-container {
-	padding: 10px 0px;
+  padding: 10px 0px;
   width: 100%;
 }
 
-.comment-textarea{
+.comment-textarea {
   font-size: 14px;
   font-family: 'Inter';
   width: 100%;
-  height: 50px; /* set initial height */
+  height: 50px;
+  /* set initial height */
   box-sizing: border-box;
-  resize: none; /* stop manual resizing */
-  overflow: hidden; /* hide scrollbars */
+  resize: none;
+  /* stop manual resizing */
+  overflow: hidden;
+  /* hide scrollbars */
   padding: 16px 20px;
   border-radius: 15px;
   border: none;
-  background:#dfdfdf;
+  background: #dfdfdf;
 }
 
-textarea:focus{
+textarea:focus {
   outline: #121212 solid 2px;
 }
 
@@ -1038,12 +1056,13 @@ textarea:focus{
   border-radius: 50px;
 }
 
-.activity-feed ul{
+.activity-feed ul {
   list-style: none;
   text-align: left;
   padding-top: 10px;
 }
-.activity-feed li{
+
+.activity-feed li {
   margin-top: 10px;
 }
 
@@ -1053,21 +1072,42 @@ textarea:focus{
 
 /*AUTHOR PAGE------------------------------------------------------------------------------------------------------------------____________________________*/
 
-.author-page-container{
-  padding: 20px;
+.author-page-container {
+      max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.author-page-layout-grid{
+  display: grid;
+    grid-template-areas: "sidebar main";
+    grid-template-columns: minmax(200px, 1fr) minmax(700px, 3fr);
+}
+
+.author-page-sidebar{
+      grid-area: sidebar;
+    background-color: none;
+    padding: 20px;
+    width: 100%;
+}
+
+.author-page-main{
+    grid-area: main;
+    padding: 20px;
+    width: 100%;
 }
 
 .author-page-header {
-display: flex;
-padding: 10px;
+  display: flex;
+  padding: 10px;
 }
 
-.author-header-image{
+.author-header-image {
   margin-right: 30px;
 
 }
 
-.author-header-image img{
+.author-header-image img {
   margin-right: 10px;
   width: 225px;
   height: 225px;
@@ -1075,136 +1115,98 @@ padding: 10px;
   box-sizing: border-box;
   background-clip: content-box;
   border-radius: 100%;
-  border: 10px solid white;
-  box-shadow: 0 2px 15px 0 rgba(0,0,0,0.2);
 }
 
-.author-meta-info{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.author-meta-info {
+  display: flex
+;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .author-meta-bio {
-  width: 100%; /* Ensure the content takes full width */
-  max-width: 375px; /* Adjust this value as needed */
+  width: 100%;
+  /* Ensure the content takes full width */
+  max-width: 375px;
+  /* Adjust this value as needed */
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
-.author-edit-button{
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #dfdfdf;
-  text-decoration: none;
-  color: #f55353;
-  border-radius: 15px;
-  border: none;
-  font-family: 'Inter-SemiBold';
-  font-size: 16px;
-  cursor:pointer;
-  width: fit-content;
-}
-
-.author-edit-button a{
-  margin-top: 20px;
-  text-decoration: none;
-  font-family: 'Inter-SemiBold';
-  font-size: 16px;
-  color: #f55353;
-}
-
-.author-follow-button{
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #dfdfdf;
-  text-decoration: none;
-  color: #f55353;
-  border-radius: 15px;
-  border: none;
-  font-family: 'Inter-SemiBold';
-  font-size: 16px;
-  cursor:pointer;
-  width: fit-content;
-}
-.author-follow-button a{
-  margin-top: 20px;
-  text-decoration: none;
-  font-family: 'Inter-SemiBold';
-  font-size: 16px;
-  color: #f55353;
-}
 
 
-
-.author-content-type-buttons{
+.author-content-type-buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 10px;
 }
 
-.author-post-list-button a{
+.author-post-list-button a {
   margin-top: 20px;
   text-decoration: none;
-  font-family: 'Inter-SemiBold';
+  font-family: 'Inter';
   font-size: 14px;
   color: gray;
 }
 
-.author-content-display {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.author-content-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 100%;
 }
 
-.author-post{
+.author-post {
   background-color: white;
   padding: 20px;
-  margin: 20px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
-  width: 500px;
-  height: 510px;
-}
-
-.author-post-header {
-  font-family: 'Inter';
-  font-size: 14px;
+  border-radius: 50px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  margin-bottom: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%; /* ensure it fills its grid cell only */
+  box-sizing: border-box;
 }
 
-.author-post-bottom-bar{
+.author-post-media {
+  aspect-ratio: 16 / 9;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.author-post-media img{
+      width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+
+.author-post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+}
+
+.author-post-bottom-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 20px;
 }
-.author-post-edit-button {
-  cursor: pointer;
-  text-decoration: none;
-  font-family: 'Inter-SemiBold';
-  font-size: 16px;
-  color: #f55353;
-}
 
-.author-post-delete-button {
-  cursor: pointer;
-  text-decoration: none;
-  font-family: 'Inter-SemiBold';
-  font-size: 16px;
-  color: #f55353;
-}
+
 
 /*AUTHOR PAGE------------------------------------------------------------------------------------------------------------------____________________________*/
 
 
 /* SINGLEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE-------------------------------------------------------------- */
 
-.single-post{
+.single-post {
   word-break: break-word;
   display: flex;
   flex-flow: column wrap;
@@ -1214,11 +1216,12 @@ padding: 10px;
   padding: 2.5rem 0px 0px;
 }
 
-.single-post hr{
-  margin-top:40px; ;
+.single-post hr {
+  margin-top: 40px;
+  ;
 }
 
-.single-post div{
+.single-post div {
   margin: 0.625rem 0px;
 }
 
@@ -1228,35 +1231,35 @@ padding: 10px;
 }
 
 
-.single-post-meta a{
+.single-post-meta a {
   font-weight: bold;
   font-family: 'Inter';
 }
 
-.single-post-content p{
+.single-post-content p {
   margin: 0.625rem 0px;
 }
 
-.single-post-content a{
-  color: #cf4669;
+.single-post-content a {
+  text-decoration: underline;
 }
 
-.single-post-content img{
+.single-post-content img {
   margin: 0.625rem 0px;
 }
 
 
 
-.single-post-comment strong{
+.single-post-comment strong {
   display: flex;
   align-items: center;
 }
 
-.single-post-comment h2{
-  margin-top: 20px; 
+.single-post-comment h2 {
+  margin-top: 20px;
 }
 
-.single-post-comment img{
+.single-post-comment img {
   margin-right: 10px;
   width: 30px;
   height: 30px;
@@ -1265,7 +1268,7 @@ padding: 10px;
   background-clip: content-box;
   border-radius: 100%;
   border: 3px solid white;
-  box-shadow: 0 2px 15px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .single-post-details {
@@ -1329,9 +1332,8 @@ padding: 10px;
 
 .event-archive-post-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* Force 2 equal columns */
   gap: 20px;
-  max-width: 100%;
 }
 
 .event-archive-post {
@@ -1341,13 +1343,15 @@ padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 100%;
+  width: 100%; /* ensure it fills its grid cell only */
   box-sizing: border-box;
+  text-align: left;
 }
 
 
 .event-archive-post-img {
-  aspect-ratio: 16 / 9; /* Or 4 / 3, or whatever you prefer */
+  aspect-ratio: 16 / 9;
+  /* Or 4 / 3, or whatever you prefer */
   width: 100%;
   overflow: hidden;
   border-radius: 30px;
@@ -1356,12 +1360,13 @@ padding: 10px;
 .event-archive-post-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fills area, keeps aspect, crops if needed */
+  object-fit: cover;
+  /* fills area, keeps aspect, crops if needed */
   display: block;
   border-radius: 30px;
 }
 
-.event-archive-post-info{
+.event-archive-post-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1391,13 +1396,13 @@ padding: 10px;
 
 .sidebar-event {
   text-align: left;
-    background-color: #FFFFFF;
-    padding: 30px;
-    border-radius: 50px;
-    margin-top: 20px;
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 50px;
+  margin-top: 20px;
 }
 
-.sidebar-event-container{
+.sidebar-event-container {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -1424,9 +1429,9 @@ padding: 10px;
 
 .sidebar-people {
   text-align: left;
-    background-color: #FFFFFF;
-    padding: 30px;
-    border-radius: 50px;
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 50px;
 }
 
 .sidebar-people-cards {
@@ -1437,10 +1442,10 @@ padding: 10px;
   padding: 15px;
   border-radius: 50px;
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.sidebar-people-cards-info{
+.sidebar-people-cards-info {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -1473,7 +1478,7 @@ padding: 10px;
 
 
 /* Entry Page ------------------------------------------------------------------ */
-.hidden-header{
+.hidden-header {
   display: none;
   visibility: hidden;
 }
@@ -1490,27 +1495,30 @@ padding: 10px;
   padding: 10px;
 }
 
-.entry-buttons{
+.entry-buttons {
   display: flex;
   align-items: center;
 }
 
-.entry-buttons button{
+.entry-buttons button {
   margin: 0px 20px;
 }
+
 /* Entry Page ------------------------------------------------------------------ */
 
 /* 404 Page ------------------------------------------------------------------ */
-.error404text{
+.error404text {
   color: rgb(168, 168, 168);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.error404text span{
+
+.error404text span {
   font-size: 100px;
 }
+
 /* 404 Page ------------------------------------------------------------------ */
 
 /* User Registration------------------------------------------------------------ */
@@ -1521,7 +1529,7 @@ padding: 10px;
   flex-direction: column;
 }
 
-.register-box{
+.register-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1536,7 +1544,7 @@ padding: 10px;
 
 .mepoNET_reg_form {
   gap: 20px;
-  padding: 20px;  
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1573,7 +1581,7 @@ padding: 10px;
   font-family: "Inter";
 }
 
-.input_container label{
+.input_container label {
   font-size: 0.9rem;
   font-family: "Inter";
   font-weight: 500;
@@ -1598,9 +1606,10 @@ padding: 10px;
   background-color: transparent;
 }
 
-.register-login-button{
+.register-login-button {
   margin-top: 20px
 }
+
 /* User Registration------------------------------------------------------------ */
 
 /* User Login ------------------------------------------------------------ */
@@ -1612,7 +1621,7 @@ padding: 10px;
   flex-direction: column;
 }
 
-.login-box{
+.login-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1670,11 +1679,11 @@ fieldset {
   background-color: transparent;
 }
 
-.login-register-button{
+.login-register-button {
   margin-top: 20px
 }
 
-.mepoNET-errors{
+.mepoNET-errors {
   color: #f52929;
   font-family: 'Inter';
 }
@@ -1687,43 +1696,43 @@ fieldset {
 .mepoNET_post_form,
 .mepoNET_event_form,
 .mepoNET_project_form {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 30px;
-    background: #FFFFFF;
-    border-radius: 50px;
-    font-family: "Inter", sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #FFFFFF;
+  border-radius: 50px;
+  font-family: "Inter", sans-serif;
 }
 
 .mepoNET_post_form h1,
 .mepoNET_event_form h1,
 .mepoNET_project_form h1 {
-    text-align: center;
-    color: #121212;
-    margin-bottom: 30px;
+  text-align: center;
+  color: #121212;
+  margin-bottom: 30px;
 }
 
 /* Fieldset Styling */
 .mepoNET_post_form fieldset,
 .mepoNET_event_form fieldset,
 .mepoNET_project_form fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Input Container Styling */
 .input_container {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .input_container label,
 .input_container label h3 {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #333;
-    font-size: 18px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+  font-size: 18px;
 }
 
 /* Input Field Styling */
@@ -1741,18 +1750,18 @@ fieldset {
 .post_featured_image,
 .project_featured_image,
 .mepoNET_event_form #event_featured_image {
-    width: 100%;
-    padding: 12px 16px;
-    border-radius: 20px;
-    border: 1px solid #ECECEC;
-    background-color: #ECECEC;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    transition: all 0.3s ease;
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 20px;
+  border: 1px solid #ECECEC;
+  background-color: #ECECEC;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
 }
 
 .mepoNET_project_form textarea {
-    min-height: 120px;
+  min-height: 120px;
 }
 
 /* Focus States */
@@ -1761,185 +1770,443 @@ fieldset {
 .mepoNET_event_form input:focus,
 .mepoNET_project_form input:focus,
 .mepoNET_project_form textarea:focus {
-    border: 1px solid transparent;
-    box-shadow: 0 0 0 2px #121212;
-    background-color: transparent;
-    outline: none;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 2px #121212;
+  background-color: transparent;
+  outline: none;
 }
 
 /* TinyMCE Editor Styling */
 .wp-editor-container {
-    border-radius: 20px;
-    overflow: hidden;
-    border: 1px solid #ECECEC;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #ECECEC;
 }
 
 .mce-tinymce {
-    border-radius: 20px !important;
-    border: none !important;
+  border-radius: 20px !important;
+  border: none !important;
 }
 
 /* File Upload Hover States */
 .post_featured_image:hover,
 .project_featured_image:hover,
 .mepoNET_event_form #event_featured_image:hover {
-    background-color: #e0e0e0;
+  background-color: #e0e0e0;
 }
 
 /* Thumbnail Preview Styling */
 .thumbnail-container {
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .thumbnail-preview,
 #thumbnail-preview,
 #project-thumbnail-preview {
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    max-width: 100px;
-    max-height: 100px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .delete-thumbnail,
 .mepoNET_event_form .thumbnail-container button {
-    background: #ff4444;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 5px 15px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.2s;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 .delete-thumbnail:hover,
 .mepoNET_event_form .thumbnail-container button:hover {
-    background: #cc0000;
+  background: #cc0000;
 }
 
 /* Study Paths Checkbox Styling */
 .study-paths-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 .study-path-option,
 .study-paths-container label {
-    background: #ECECEC;
-    padding: 8px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.2s;
-    margin: 0;
+  background: #ECECEC;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin: 0;
 }
 
 .study-path-option:hover,
 .study-paths-container label:hover {
-    background: #e0e0e0;
+  background: #e0e0e0;
 }
 
 .study-path-option input[type="checkbox"],
 .study-paths-container input[type="checkbox"],
 .input_container input[type="checkbox"] {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 /* Submit Button Styling */
 .post_submit_button,
 .submit-button {
-    width: 100%;
-    padding: 15px;
-    border-radius: 20px;
-    background-color: #121212;
-    color: white;
-    border: none;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #121212;
+  color: white;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
 }
 
 .post_submit_button:hover,
 .submit-button:hover {
-    background-color: #333;
-    transform: translateY(-2px);
+  background-color: #333;
+  transform: translateY(-2px);
 }
 
 /* Error Message Styling */
 .mepoNET-error-messages,
 .mepoNET-errors,
 .mepoNET_errors {
-    background: #ffeeee;
-    padding: 15px;
-    border-radius: 20px;
-    margin-bottom: 25px;
-    border-left: 4px solid #ff4444;
+  background: #ffeeee;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  border-left: 4px solid #ff4444;
 }
 
 .mepoNET-error-messages p,
 .mepoNET-errors .error-message,
 .mepoNET_errors .reg_error_head {
-    margin: 5px 0;
-    color: #ff4444;
+  margin: 5px 0;
+  color: #ff4444;
 }
 
 /* Success Message Styling */
 .mepoNET-success {
-    background: #eeffee;
-    padding: 15px;
-    border-radius: 20px;
-    margin-bottom: 25px;
-    border-left: 4px solid #44ff44;
-    color: #006600;
+  background: #eeffee;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  border-left: 4px solid #44ff44;
+  color: #006600;
 }
 
 /* Project-specific Layout */
 .add-project-field-container {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 25px;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
 }
 
 .project-field-container-1 {
-    flex: 1;
+  flex: 1;
 }
 
 /* Event-specific Styles */
 .mepoNET_event_form .input_container label h3:after {
-    content: " *";
-    color: #ff4444;
-    display: none;
+  content: " *";
+  color: #ff4444;
+  display: none;
 }
 
 .mepoNET_event_form .input_container label[for="event_date"] h3:after,
 .mepoNET_event_form .input_container label[for="event_time_start"] h3:after,
 .mepoNET_event_form .input_container label[for="event_location"] h3:after,
 .mepoNET_event_form .input_container label[for="event_entrance"] h3:after {
-    display: inline;
+  display: inline;
 }
 
 .mepoNET_event_form .event-datetime {
-    display: inline-block;
-    width: calc(33.33% - 10px);
-    margin-right: 15px;
+  display: inline-block;
+  width: calc(33.33% - 10px);
+  margin-right: 15px;
 }
 
 .mepoNET_event_form .event-datetime:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 /* Project-specific Required Field Indicator */
 .mepoNET_project_form .input_container label h3 span[style="color:red"] {
-    color: #ff4444 !important;
-    margin-left: 4px;
+  color: #ff4444 !important;
+  margin-left: 4px;
+}
+
+/* Edit Profile Modal Styles */
+.window-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.window-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.window-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.edit-profile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mepoNET_edit_fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.current-avatar img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.edit-profile-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .mepoNET_edit_fieldset {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Edit Profile Modal Overlay --- */
+.window-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Initially hidden */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  /* Smooth fade transition */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 9999;
+}
+
+.window-overlay--active {
+  position: fixed;
+  /* fixed to viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 0.3s ease;
+}
+
+.window-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 700px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+/* Heading inside modal */
+.window-content h3 {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Close Button --- */
+.window-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 28px;
+  color: #555;
+  transition: color 0.2s ease;
+  user-select: none;
+}
+
+.window-close:hover {
+  color: #000;
+}
+
+/* --- Form Layout --- */
+.edit-profile-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Fieldset grid */
+.mepoNET_edit_fieldset {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Avatar styles */
+.current-avatar img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons container */
+.edit-profile-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+/* Scrollbar styling for modal content (optional) */
+.window-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.window-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.window-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .window-content {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .window-close {
+    font-size: 24px;
+    top: 8px;
+    right: 8px;
+  }
+}
+
+.edit-profile-fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px 0px;
+  margin: 15px 0px;
+}
+
+.mepoNET_edit_profile_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.network-follow h3, .network-recommend h3{
+  padding: 20px;
+  text-align: left;
+}
+
+
+
+.network-follow {
+  width: 100%;
+}
+
+.network-recommend {
+  width: 100%;
+}
+
+.card-layout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  padding: 20px;
+}
+
+.network-follow-cards{
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:15rem;
+  height: auto;
+  gap: 10px;
+  text-align: center;
+}
+
+.network-follow-cards img{
+      width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.network-recommend{
+  padding-top: 30px;
 }
 
 /*MOBILE*/
-

@@ -502,3 +502,401 @@ Stack trace:
 [10-Jun-2025 03:19:00 UTC] PHP Warning:  Array to string conversion in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\formatting.php on line 1096
 [10-Jun-2025 03:19:00 UTC] PHP Warning:  Array to string conversion in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\formatting.php on line 1096
 [10-Jun-2025 04:34:20 UTC] PHP Warning:  Undefined array key "mepoNET-post-submission-nonce" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_post_submission.php on line 169
+[11-Jun-2025 04:43:07 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php on line 457
+[11-Jun-2025 04:47:04 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(1)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:47:11 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(1)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:48:06 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(1)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:48:14 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(1)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:50:13 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(1)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:50:47 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(1)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:50:53 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(1)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:51:22 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(4)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:51:54 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(4)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:52:32 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(4)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:52:39 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(4)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:54:14 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(4)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:54:25 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(4)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:55:02 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(4)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:56:11 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(4)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:56:13 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(4)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:58:50 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(4)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:58:52 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(4)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:59:07 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(4)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 04:59:22 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(4)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 05:00:52 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(1)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 05:01:14 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(515): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_auth.php(462): MepoNET_Auth_System->edit_profile_fields(1)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Auth_System->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 05:37:20 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\page-test.php on line 5
+[11-Jun-2025 05:43:52 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php(91): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php(38): MepoNET_Profile_Editor->edit_profile_fields(1)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Profile_Editor->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\page-test.php(7): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 05:43:57 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php(91): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php(38): MepoNET_Profile_Editor->edit_profile_fields(1)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Profile_Editor->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 05:44:02 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php(91): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php(38): MepoNET_Profile_Editor->edit_profile_fields(1)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Profile_Editor->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 05:44:07 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php:5311
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php(5247): __checked_selected_helper(Object(WP_Post), 57, false, 'selected')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php(91): selected(Object(WP_Post), 57, false)
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php(38): MepoNET_Profile_Editor->edit_profile_fields(1)
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(434): MepoNET_Profile_Editor->edit_profile_form(Array, '', 'edit_profile_fo...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(edit_p...', 'do_shortcode_ta...', '[edit_profile_f...')
+#6 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\author.php(202): do_shortcode('[edit_profile_f...')
+#7 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#8 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#9 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#10 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\general-template.php on line 5311
+[11-Jun-2025 05:52:47 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:52:47 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:52:48 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:52:49 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:53:35 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:53:35 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:53:36 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:53:36 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:53:37 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:53:37 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:53:38 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:53:38 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:53:39 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:53:39 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:53:39 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 05:53:40 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\mu-plugins\mepoNET_edit_profile.php on line 226
+[11-Jun-2025 07:54:06 UTC] PHP Parse error:  syntax error, unexpected token ")" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\page-past-events.php on line 51
+[11-Jun-2025 07:54:31 UTC] PHP Parse error:  syntax error, unexpected token ")" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\page-past-events.php on line 51
+[11-Jun-2025 07:54:32 UTC] PHP Parse error:  syntax error, unexpected token ")" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\page-past-events.php on line 51
+[11-Jun-2025 07:55:05 UTC] PHP Parse error:  syntax error, unexpected token ")" in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\page-past-events.php on line 51
+[11-Jun-2025 07:55:14 UTC] PHP Fatal error:  Uncaught ArgumentCountError: implode() expects at most 2 arguments, 3 given in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\page-past-events.php:51
+Stack trace:
+#0 C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\page-past-events.php(51): implode(' ', Array, '...')
+#1 C:\Users\devan\Local Sites\meponetv1\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\devan\\...')
+#2 C:\Users\devan\Local Sites\meponetv1\app\public\wp-blog-header.php(19): require_once('C:\\Users\\devan\\...')
+#3 C:\Users\devan\Local Sites\meponetv1\app\public\index.php(17): require('C:\\Users\\devan\\...')
+#4 {main}
+  thrown in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\page-past-events.php on line 51
+[11-Jun-2025 08:39:52 UTC] PHP Warning:  Undefined variable $likeStatus in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\single.php on line 48
+[11-Jun-2025 08:39:52 UTC] PHP Warning:  Undefined variable $likeStatus in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\single.php on line 50
+[11-Jun-2025 08:39:52 UTC] PHP Warning:  Undefined variable $likeCount in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\single.php on line 57
+[11-Jun-2025 08:39:52 UTC] PHP Warning:  Attempt to read property "found_posts" on null in C:\Users\devan\Local Sites\meponetv1\app\public\wp-content\themes\mepoNETv1\single.php on line 57

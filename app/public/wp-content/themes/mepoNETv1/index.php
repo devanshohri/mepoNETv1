@@ -299,6 +299,16 @@ get_header(); ?>
                         <?php } ?>
                         <!-- PROJECT HTML -->
                     <?php endwhile; ?>
+                    <div class="pagination">
+    <?php
+    global $wp_query;
+    echo paginate_links(array(
+        'total' => $wp_query->max_num_pages,
+        'prev_text' => __('« Prev'),
+        'next_text' => __('Next »'),
+    ));
+    ?>
+</div>
                 <?php else: ?>
                     <p>No posts found.</p>
                 <?php endif; ?>

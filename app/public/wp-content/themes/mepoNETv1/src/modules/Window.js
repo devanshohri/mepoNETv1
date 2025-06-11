@@ -16,7 +16,7 @@ class Window {
 
     openOverlay() {
         console.log("lknlkelfkm")
-        this.WindowOverlay.addClass("window-overlay--active");
+        this.WindowOverlay.addClass("window-overlay--active").removeClass("window-overlay");
         $("body").addClass("body-no-scroll");
     }
 
